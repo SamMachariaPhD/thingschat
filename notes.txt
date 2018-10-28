@@ -1,0 +1,140 @@
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git status
+On branch master
+nothing to commit, working directory clean
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   thesite/pages/templates/base.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git add *.html
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   thesite/pages/templates/base.html
+
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git commit -m 'Spaced base.html --just a test'
+[master b186d83] Spaced base.html --just a test
+ 1 file changed, 1 deletion(-)
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git status
+On branch master
+nothing to commit, working directory clean
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git push origin thingschat
+error: src refspec thingschat does not match any.
+error: failed to push some refs to 'origin'
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git push originwarning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git remote add origin https://sirmaxford@bitbucket.org/sirmaxford/thingschat.git
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git push -u origin--all
+Password for 'https://sirmaxford@bitbucket.org':
+To https://sirmaxford@bitbucket.org/sirmaxford/thingschat.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://sirmaxford@bitbucket.org/sirmaxford/thingschat.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git push -u origin--all
+Password for 'https://sirmaxford@bitbucket.org':
+To https://sirmaxford@bitbucket.org/sirmaxford/thingschat.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://sirmaxford@bitbucket.org/sirmaxford/thingschat.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git pull
+Password for 'https://sirmaxford@bitbucket.org':
+remote: Invalid username or password
+fatal: Authentication failed for 'https://sirmaxford@bitbucket.org/sirmaxford/thingschat.git/'
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git pull
+Password for 'https://sirmaxford@bitbucket.org':
+remote: Invalid username or password
+fatal: Authentication failed for 'https://sirmaxford@bitbucket.org/sirmaxford/thingschat.git/'
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git pull
+Password for 'https://sirmaxford@bitbucket.org':
+warning: no common commits
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+From https://bitbucket.org/sirmaxford/thingschat
+ * [new branch]      master     -> origin/master
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git push -u origin--all
+Password for 'https://sirmaxford@bitbucket.org':
+remote: Invalid username or password
+fatal: Authentication failed for 'https://sirmaxford@bitbucket.org/sirmaxford/thingschat.git/'
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git pullPassword for 'https://sirmaxford@bitbucket.org':
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git push -u origin--all
+Password for 'https://sirmaxford@bitbucket.org':
+To https://sirmaxford@bitbucket.org/sirmaxford/thingschat.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://sirmaxford@bitbucket.org/sirmaxford/thingschat.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(venv) sam@sirmaxford:/media/sam/SirmaxforD/web/thingschat$ git push -f originmaster
+Password for 'https://sirmaxford@bitbucket.org':
+Counting objects: 9831, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (6424/6424), done.
+Writing objects: 100% (9831/9831), 14.19 MiB | 2.41 MiB/s, done.
+Total 9831 (delta 2232), reused 9831 (delta 2232)
+remote: Resolving deltas: 100% (2232/2232), done.
+To https://sirmaxford@bitbucket.org/sirmaxford/thingschat.git
+ + 38ddc1b...b186d83 master -> master (forced update)
