@@ -6,7 +6,8 @@ def home(request):
     return render(request, "home.html", {})
 
 def about(request):
-    return render(request, "about.html", {})
+    from pages.namer import name
+    return render(request, "about.html", {"ma_name": name()})
 
 def contact(request):
     return render(request, "contact.html", {})
